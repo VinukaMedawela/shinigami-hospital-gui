@@ -1,0 +1,15 @@
+Compiled Java classes
+
+*.class
+
+BlueJ context files
+
+*.ctxt
+
+IDE and build artifacts
+
+*.log target/ out/ bin/ build/ .classpath .project .settings/ .idea/ *.iml
+
+OS-specific files
+
+.DS_Store Thumbs.db
