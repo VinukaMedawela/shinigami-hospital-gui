@@ -1,6 +1,6 @@
 Shinigami Hospital GUI
 
-A Java Swing-based GUI application for managing hospital reservations, built using the MVC architecture and Observer pattern. This project allows users to view doctor information, create/update/delete reservations, and view reservation summaries.
+Shinigami Hospital GUI is a Java Swing-based application designed to streamline hospital reservation management. Built with the Model-View-Controller (MVC) architecture and the Observer pattern, it provides an intuitive interface for patients to view doctor details, create and manage reservations, and access real-time summaries.
 
 Features
 
@@ -8,63 +8,85 @@ Features
 
 
 
-View Doctors: Displays doctor details (name, availability, type) in a tabbed interface.
+View Doctors: Browse doctor information (name, availability, and specialization) in a dedicated tab.
 
 
 
-Create Reservations: Users enter their name, select a reservation type, and choose a doctor from a dynamically updated combo box.
+Create Reservations: Enter a patient name, select a reservation type (e.g., Doctor or Lab), and choose from dynamically filtered doctors using combo boxes.
 
 
 
-Manage Reservations: Update patient names or delete reservations using an auto-generated ID.
+Manage Reservations: Update patient names or delete reservations using auto-generated IDs, with real-time feedback.
 
 
 
-Summary: Displays all reservation details, updated in real-time.
+Reservation Summary: View all reservations, automatically updated after edits, in a clear, scrollable display.
 
 
 
-Uses JTabbedPane, JComboBox, and event listeners for a seamless UI experience.
+Responsive UI: Leverages JTabbedPane, JComboBox, and event listeners for a seamless user experience.
 
-Technologies
-
-
-
-
-
-Java
-
-
-
-Swing (JTabbedPane, JComboBox, JTextArea, etc.)
-
-
-
-MVC Architecture
-
-
-
-Observer Pattern
-
-Setup and Running
+Technologies Used
 
 
 
 
 
-Clone the repository: git clone https://github.com/yourusername/shinigami-hospital-gui.git
+Java: Core programming language.
 
 
 
-Navigate to the project directory: cd shinigami-hospital-gui
+Swing: For GUI components (JTabbedPane, JComboBox, JTextArea, etc.).
 
 
 
-Compile the Java files: javac *.java model/*.java
+MVC Architecture: Ensures modular, maintainable code.
 
 
 
-Run the application: java HospitalGUI
+Observer Pattern: Enables real-time updates across panels.
+
+Getting Started
+
+Prerequisites
+
+
+
+
+
+Java Development Kit (JDK) 8 or later.
+
+
+
+Git (optional, for cloning the repository).
+
+Installation and Setup
+
+
+
+
+
+Clone the repository:
+
+git clone https://github.com/VinukaMedawela/shinigami-hospital-gui.git
+
+
+
+Navigate to the project directory:
+
+cd shinigami-hospital-gui
+
+
+
+Compile the Java files:
+
+javac *.java model/*.java
+
+
+
+Run the application:
+
+java HospitalGUI
 
 Project Structure
 
@@ -72,31 +94,35 @@ Project Structure
 
 
 
-HospitalGUI.java: Main GUI class with tabbed panes.
+HospitalGUI.java: Initializes the main GUI window with tabbed panes.
 
 
 
-DoctorPanel.java: Displays doctor information.
+DoctorPanel.java: Displays doctor details in a scrollable text area.
 
 
 
-ReservationPanel.java: Handles reservation creation with combo boxes.
+ReservationPanel.java: Manages reservation creation with dynamic combo boxes.
 
 
 
-ManagePanel.java: Manages reservation updates and deletions.
+ManagePanel.java: Handles reservation updates and deletions with validation.
 
 
 
-ReportPanel.java: Shows reservation summaries.
+ReportPanel.java: Shows a real-time summary of all reservations.
 
 
 
-model/: Contains model classes (Doctors, Reservations, etc.) for MVC.
+model/: Contains MVC model classes (e.g., Doctors.java, Reservations.java).
 
-Screenshots
 
-(To be added: Upload images from your project report, e.g., View Doctors tab, Create Reservation tab, etc.)
+
+.gitignore: Excludes compiled .class and BlueJ .ctxt files.
+
+
+
+README.md: Project documentation.
 
 Usage
 
@@ -104,11 +130,33 @@ Usage
 
 
 
-Launch the app to view the GUI with four tabs: View Doctors, Create Reservation, Manage Reservation, and Summary.
+Launch the application to access a tabbed interface with four sections:
 
 
 
-Follow the user manual in the project report for detailed instructions.
+
+
+View Doctors: See available doctors and their details.
+
+
+
+Create Reservation: Enter patient details and select options to book.
+
+
+
+Manage Reservation: Update or delete reservations by ID.
+
+
+
+Summary: View all reservations, reflecting real-time changes.
+
+
+
+Refer to the project report (upload your report to a docs/ folder) for a detailed user manual.
+
+Screenshots
+
+Coming soon: Screenshots of the GUI tabs (View Doctors, Create Reservation, Manage Reservation, Summary) will be added to the screenshots/ folder.
 
 Contributors
 
@@ -116,11 +164,13 @@ Contributors
 
 
 
-Vinuka
+Vinuka Medawela (GitHub)
 
 
 
 Tehara
+
+
 
 Notes
 
@@ -128,8 +178,12 @@ Notes
 
 
 
-Ensure Java is installed (JDK 8 or later recommended).
+Developed in BlueJ, but compatible with any Java IDE or command-line environment.
 
 
 
-The project was developed using BlueJ, but it can be run via command line or any Java IDE.
+Ensure all model classes in the model/ directory are included for full functionality.
+
+
+
+Feedback and contributions are welcome! Open an issue or submit a pull request.
